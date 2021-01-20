@@ -43,3 +43,4 @@ if __name__ == "__main__":
     print(has_unique_chars_answer("abcd"))
     print(has_unique_chars_answer(""))
     print(has_unique_chars_answer(1))
+    print("test git pull")
