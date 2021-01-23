@@ -2,7 +2,7 @@ class Solution(object):
 
     def find_diff(self, str1, str2):
         if str1 is None or str2 is None:
-            raise("TypeError")
+            raise TypeError("str1 or str2 cannot be None")
         long_str = str1 if len(str1) > len(str2) else str2
         short_str = str2 if len(str1) > len(str2) else str1
         for i in range(len(short_str)):
