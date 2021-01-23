@@ -26,7 +26,17 @@ class Rotation(object):
             if self.is_substring(new_s1, s2):
                 return True
         return False
-
+    
+    def is_substring_golden(self, s1, s2):
+        if s1 in s2:
+            return True
+        return False
+   
+    def is_rotation_golden(self, s1, s2):
+        if s1 is None or s2 is None:
+            return False
+        return is_substring_golden(s2, s1+s1)
+    
 if __name__ == "__main__":
     a = Rotation()
     is_substring = a.is_rotation
